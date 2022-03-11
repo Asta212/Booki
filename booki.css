@@ -5,8 +5,8 @@
 ************************************/
 
 * {
-    box-sizing: border-box;
-    font-family: "Raleway","Sans-serif";
+  box-sizing: border-box;
+  font-family: "Raleway", "Sans-serif";
 }
 
 /************************************
@@ -14,7 +14,7 @@
 ************************************/
 
 body {
-margin-top: 0px;
+  margin-top: 0px;
 }
 
 a {
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-  border-top-color:#0065fc;
+  border-top-color: #0065fc;
 }
 
 #logo {
@@ -50,44 +50,46 @@ nav a:hover {
   display: flex;
 }
 
-
-
 .sub-nav a:hover {
   color: #0065fc;
 }
 
-.searchForm {
-  display: inline-flex;
-  max-width: 100%;
-  overflow: auto;
+/*BODY*/
+.wrapper {
+  padding: 0 32px;
 }
 
-.searchButton {
-  background-color: #0065FC;
-  color: white;
+.wrapper h1,
+.wrapper p {
+  margin-bottom: 13px;
+}
+
+/*SEARCH-FORM*/
+.search-form {
+  display: inline-flex;
+}
+
+.search-form i {
+  padding: 16px 19px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-form input {
+  flex-basis: 256px;
+  border: 3px solid #f2f2f2;
+}
+.search-form input::placeholder {
+  font-size: 16px;
+}
+
+.search-form button {
+  background-color: #0065fc;
+  color: #f2f2f2;
+  font-size: 16px;
   font-weight: bold;
   border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0 1.5rem;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1rem;
+  border-radius: 0 10px 10px 0;
+  padding: 1px 24px;
   cursor: pointer;
-}
-
-
-@media (max-width:992px) {
-  .sub-nav{
-    flex-basis: 100%;
-  }
-
-  .sub-nav a {
-    flex-basis: 50%;
-    text-align: center;
-    border-bottom: 3px solid #F2F2F2;
-  }
-
-  .sub-nav a:hover {
-    border-bottom-color: #0065fc;
-    border-top-color: transparent;
-  }
 }

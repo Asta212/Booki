@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+  .sub-nav {
+    flex-basis: 100%;
+  }
+
+  .sub-nav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .sub-nav a:hover {
+    border-bottom-color: #0065fc;
+    border-top-color: transparent;
+  }
+}
