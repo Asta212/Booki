@@ -1,4 +1,7 @@
+/*ecran-tablette de 992px à 768px*/
 @media (max-width: 992px) {
+
+  /*HEADER*/
     .sub-nav {
       flex-basis: 100%;
     }
@@ -12,5 +15,10 @@
     .sub-nav a:hover {
       border-bottom-color: #0065fc;
       border-top-color: transparent;
+    }
+
+    /*SEARCH-BAR*/
+    .search-form .search-texte {
+      display: none;
     }
   }
