@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .search-form input {
-flex-basis: 192px;
+  flex-basis: 192px;
   border: 1px solid #f2f2f2;
 }
 
@@ -96,4 +96,8 @@ flex-basis: 192px;
 
 .search-form button:hover {
   transform: scale(1.03);
+}
+
+.fas-fa-search {
+display: none;
 }
