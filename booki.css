@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .search-form input {
-flex-basis: 96px;
+flex-basis: 158px;
   border: 1px solid #f2f2f2;
 }
 
@@ -92,4 +92,8 @@ flex-basis: 96px;
   border-radius: 0 10px 10px 0;
   padding: 1px 24px;
   cursor: pointer;
+}
+
+.search-form button:hover {
+  transform: scale(1.03);
 }
