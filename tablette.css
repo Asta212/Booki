@@ -21,8 +21,9 @@
     .search-form .search-texte {
       display: none;
     }
-    .fas.fa-search {
+
+    .fas-fa-search {
       display: inline;
-    background-color: inherit;
+      background-color: inherit;
     }
   }

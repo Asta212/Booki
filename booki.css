@@ -68,7 +68,7 @@ nav a:hover {
   display: inline-flex;
 }
 
-.search-form i {
+div>span {
   padding: 16px 19px;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
@@ -99,5 +99,5 @@ nav a:hover {
 }
 
 .fas-fa-search {
-display: none;
+  display: none;
 }
