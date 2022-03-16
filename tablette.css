@@ -18,11 +18,11 @@
     }
 
     /*SEARCH-BAR*/
-    .search-form .search-texte {
+    .search-texte {
       display: none;
     }
 
-    .fas-fa-search {
+    .fa-search {
       display: inline;
       background-color: inherit;
     }
