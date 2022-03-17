@@ -23,7 +23,7 @@
     }
 
     .fa-search {
-      display: inline;
+      display: inline !important;
     }
   }
 
