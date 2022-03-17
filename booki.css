@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --blue: #0065fc;
+  --iconblue: #0065fc;
+  --darkgrey: #d9d9d9;
+  --lightgrey: #f2f2f2;
+  --lightblue: #deebff;
+  --lighterblue: #f3f8ff;
+}
 /************************************
 *                 General           *
 ************************************/
@@ -27,7 +35,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-  border: red;
+  border: var--(blue);
 }
 
 nav a {
@@ -36,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-  border-top-color: #0065fc;
+  border-top-color: var--(blue);
 }
 
 #logo {
@@ -51,14 +59,14 @@ nav a:hover {
 }
 
 .sub-nav a:hover {
-  color: #0065fc;
+  color: var--(blue);
 }
 
 /*BODY*/
 .wrapper {
   padding: 0 32px;
 }
-.wrapper h1,
+
 .wrapper p {
   margin-bottom: 16px;
 }
@@ -67,18 +75,17 @@ nav a:hover {
 .search-form {
   display: inline-flex;
   max-width: 100%;
-  overflow: auto;
 }
 
 .fa-location-dot {
   padding: 16px 19px;
-  background-color: #f2f2f2;
+  background-color: var(--lightgrey);
   border-radius: 10px 0 0 10px;
 }
 
 .search-form input {
   flex-basis: 192px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--lightgrey);
 }
 
 .search-form input::placeholder {
@@ -86,7 +93,7 @@ nav a:hover {
 }
 
 .search-form button {
-  background-color: #0065fc;
+  background-color: var(--iconblue);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -100,39 +107,150 @@ nav a:hover {
   transform: scale(1.03);
 }
 
-.fa-search {
+.fa-search.fas {
   display: none;
 }
 
-    /*FILTER*/
-    .filter-list {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      flex-wrap: wrap;
+/*FILTER*/
+.filter-list {
+  display: flex;
+  align-items: center;
+  gap: 16px 32px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
 
-    }
+.filter-list h1 {
+  margin-bottom: 0;
+}
 
-    .filter .fas {
-      color: #0065fc;
-      background-color: #DEEBFF;
-      padding: 16px;
-      border-radius: 50%;
-      margin: -3px;
-   }
+.filter {
+  border: 2px solid var(--lightgrey);
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 100ms;
+}
 
-   .filter {
-     border: 2px solid #f2f2f2;
-     border-radius: 32px;
-     cursor: pointer;
-   }
+.filter .fas {
+  color: var(--iconblue);
+  background-color: var(--lightblue);
+  border-radius: 50%;
+  margin: -2px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-   .filter:hover {
-     background-color: #f3f8ff;
-     transform: scale(1.015);
-   }
+.filter span {
+  font-weight: bold;
+  padding: 0 16px;
+}
 
-   .filter span {
-     font-weight: bold;
-     padding: 16px;
-   }
+.filter:hover {
+  background-color: var(--lighterblue);
+  transform: scale(1.015);
+}
+
+/*RESULTS MESSAGE*/
+.results-message {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.results-message .fa-info {
+  color: #0065fc;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--darkgrey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*APPARTMENT LIST*/
+.apartment-list {
+  display: flex;
+  gap: 16px;
+}
+
+.apartment-list div {
+  padding: 8px;
+  border-radius: 16px;
+  background-color: var(--lightgrey);
+}
+
+.apartment-list .city {
+  flex-basis: 60%;
+}
+
+.city a {
+  font-weight: bold;
+}
+
+.apartment-list .popular {
+  flex-basis: 33%;
+}
+
+/*LIST APARTMENTS CITY */
+.city-apartments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.city-apartments-list div {
+  flex-basis: 30%;
+}
+/*POPULAR*/
+.apartment-list .popular-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.apartment-list .popular-flex div {
+  border: 1px solid blue;
+}
+
+.apartment-list h3 {
+  flex-basis: 100%;
+}
+
+/*APARTMENT CARD*/
+.apartment-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 0 36px #0000002e;
+  flex-grow: 1;
+}
+
+.apartment-card img {
+  border-radius: 16px 16px 0 0;
+  height: 112px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.apartment-card p, 
+.apartment-card h3 {
+margin: 3.2px;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.grey {
+  color: var(--darkgrey);
+}

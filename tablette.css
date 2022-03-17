@@ -1,29 +1,50 @@
 /*ecran-tablette de 992px à 768px*/
 @media (max-width: 992px) {
-
   /*HEADER*/
-    .sub-nav {
-      flex-basis: 100%;
-    }
-  
-    .sub-nav a {
-      flex-basis: 50%;
-      text-align: center;
-      border-bottom: 3px solid #f2f2f2;
-    }
-  
-    .sub-nav a:hover {
-      border-bottom-color: #0065fc;
-      border-top-color: transparent;
-    }
-
-    /*SEARCH-BAR*/
-    .search-texte {
-      display: none;
-    }
-
-    .fa-search {
-      display: inline !important;
-    }
+  .sub-nav {
+    flex-basis: 100%;
   }
 
+  .sub-nav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .sub-nav a:hover {
+    border-bottom-color: #0065fc;
+    border-top-color: transparent;
+  }
+
+  /*SEARCH-BAR*/
+  .search-form {
+    overflow: auto;
+  }
+
+  .search-texte {
+    display: none;
+  }
+
+  .fa-search {
+    display: inline !important;
+  }
+
+  /*APPARTMENT LIST*/
+  .apartment-list {
+    flex-direction: column;
+  }
+  
+  .popular {
+    order: -1;
+  }
+
+  /*LIST APARTMENTS CITY*/
+  .city-apartments-list div {
+    flex-basis: auto;
+  }
+
+  /*POPULAR*/
+  .apartment-list .popular {
+    flex-direction: row;
+  }
+}
