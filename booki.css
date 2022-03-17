@@ -100,8 +100,8 @@ nav a:hover {
   transform: scale(1.03);
 }
 
-.fa-search {
-  display: none;
+.fa-search.fas {
+  display: none; 
 }
 
     /*FILTER*/
