@@ -1,20 +1,5 @@
-/*ecran-tablette de 992px à 768px*/
-@media (max-width: 992px) {
-  /*HEADER*/
-  .sub-nav {
-    flex-basis: 100%;
-  }
+/*TABLET BREAKPOINT MEDIA QUERY*/
 
-  .sub-nav a {
-    flex-basis: 50%;
-    text-align: center;
-    border-bottom: 3px solid #f2f2f2;
-  }
-
-  .sub-nav a:hover {
-    border-bottom-color: #0065fc;
-    border-top-color: transparent;
-  }
 
   /*SEARCH-BAR*/
   .search-form {
@@ -39,12 +24,12 @@
   }
 
   /*LIST APARTMENTS CITY*/
-  .city-apartments-list div {
+  /*.city-apartments-list div {
     flex-basis: auto;
-  }
+  }*/
 
   /*POPULAR*/
-  .apartment-list .popular {
+  .apartment-list .popular-flex {
     flex-direction: row;
   }
 }
