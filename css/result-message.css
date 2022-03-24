@@ -1,0 +1,17 @@
+/* RESULT MESSAGE */
+.results-message {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .results-message .fa-info {
+    color: #0065fc;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--darkgrey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

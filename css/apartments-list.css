@@ -1,0 +1,37 @@
+/*APPARTMENT LIST*/
+.apartment-list {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .apartment-list div {
+    padding: 8px;
+    border-radius: 16px;
+    background-color: var(--lightgrey);
+  }
+  
+  .apartment-list .city {
+    flex-basis: 64%;
+  }
+  
+  .city a {
+    font-weight: bold;
+  }
+  
+  .apartment-list .popular {
+    flex-basis: 33%;
+  }
+
+ @media only screen 
+and (min-width: 768px)
+and (max-width: 992px) {
+    
+  /*APPARTMENT LIST*/
+  .apartment-list {
+    flex-direction: column;
+  }
+  
+  .popular {
+    order: -1;
+  }
+}

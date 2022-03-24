@@ -1,0 +1,12 @@
+/*LIST APARTMENTS CITY */
+.city-apartments-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+    margin-bottom: 16px;
+  }
+  
+  .city-apartments-list div {
+    flex-basis: 30%;
+  }  

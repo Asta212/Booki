@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("./css/navbar.css");
+@import url("./css/body.css");
+@import url("./css/search-form.css");
+@import url("./css/Filters.css");
+@import url("./css/result-message.css");
+@import url("./css/popular.css");
+@import url("./css/list-apartments-city.css");
+@import url("./css/apartments-list.css");
+@import url("./css/apartment-card.Css");
+
+:root {
+  --blue: #0065fc;
+  --iconblue: #0065fc;
+  --darkgrey: #d9d9d9;
+  --lightgrey: #f2f2f2;
+  --lightblue: #deebff;
+  --lighterblue: #f3f8ff;
+}
