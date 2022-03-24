@@ -9,6 +9,7 @@
 @import url("./css/apartments-list.css");
 @import url("./css/apartment-card.Css");
 @import url("./css/popular-card.Css");
+@import url("./css/activities.Css");
 
 :root {
   --blue: #0065fc;
