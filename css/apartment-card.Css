@@ -1,0 +1,30 @@
+/*APARTMENT CARD*/
+.apartment-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 0 36px #0000002e;
+    flex-grow: 1;
+    min-width: 240px;
+  }
+  
+  .apartment-card img {
+    border-radius: 16px 16px 0 0;
+    height: 112px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .apartment-card p, 
+  .apartment-card h3 {
+  margin: 3.2px;
+  }
+  
+  .blue {
+    color: var(--blue);
+  }
+  
+  .grey {
+    color: var(--darkgrey);
+  }
