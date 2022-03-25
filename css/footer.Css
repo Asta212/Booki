@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--lightgrey);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > * {
+    flex-basis: 25%;
+}
+
+h4 {
+    margin-left: 39px;
+}

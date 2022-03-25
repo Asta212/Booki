@@ -4,7 +4,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    border: var--(blue);
+    
   }
   
   nav a {
@@ -13,7 +13,7 @@ nav {
   }
   
   nav a:hover {
-    border-top-color: var--(blue);
+    border-top-color: var(--blue);
   }
   
   #logo {
@@ -42,11 +42,36 @@ and (max-width: 992px) {
   .sub-nav a {
     flex-basis: 50%;
     text-align: center;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid var(--lightgrey);
   }
 
   .sub-nav a:hover {
-    border-bottom-color: #0065fc;
+    border-bottom-color: var(--blue);
+    border-top-color: transparent;
+  }
+}
+
+@media only screen 
+and (min-width: 200px)
+and (max-width: 770px) {
+
+  #logo {
+    margin: auto;
+    max-width: none;
+  }
+
+  .sub-nav {
+    flex-basis: 100%;
+  }
+
+  .sub-nav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid var(--lightgrey);
+  }
+
+  .sub-nav a:hover {
+    border-bottom-color: var(--blue);
     border-top-color: transparent;
   }
 }

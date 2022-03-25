@@ -31,7 +31,4 @@ and (max-width: 992px) {
     flex-direction: column;
   }
   
-  .popular {
-    order: -1;
-  }
 }

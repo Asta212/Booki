@@ -21,8 +21,8 @@
     
     .popular-card {
       display: flex;
-      min-width: 240px;
-      max-height: 160px;
+      min-width: 220px;
+      max-height: 180px;
     }
     
     .popular-card .stars {
