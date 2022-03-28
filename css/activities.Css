@@ -70,15 +70,28 @@
 }
 
 
-@media only screen and
- (min-width: 768px) and (max-width: 992px) {
+@media only screen and 
+ (max-width: 992px) {
+
    .activities-list {
+     row-gap: 32px;
      grid-template-rows: repeat(auto-fit, 240px);
+     grid-template-columns: repeat(2,1fr);
    }
 
   .activities-list > * {
     grid-column: span 1;
     grid-row: span 1;
     height: 240px;
+  }
+}
+
+@media only screen and
+(max-width: 770px) {
+  
+  .activities-list {
+    row-gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 240px) ;
   }
 }
