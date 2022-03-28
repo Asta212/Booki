@@ -48,6 +48,7 @@ and (max-width: 992px) {
   .sub-nav a:hover {
     border-bottom-color: var(--blue);
     border-top-color: transparent;
+    cursor: pointer;
   }
 }
 
@@ -73,5 +74,6 @@ and (max-width: 770px) {
   .sub-nav a:hover {
     border-bottom-color: var(--blue);
     border-top-color: transparent;
+    cursor: pointer;
   }
 }

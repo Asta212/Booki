@@ -20,4 +20,8 @@ and (max-width: 992px) {
   .popular {
     order: -1;
   }
+
+  .popular:hover {
+    cursor: pointer;
+  }
 }
